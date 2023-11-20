@@ -44,5 +44,5 @@ graph LR;
 ```mermaid
 graph LR;
 %% так в mermaid можно писать комментарии
-  untracked -- "git add" --> staged;
+  untracked -- "git add" --> staged (в списке на коммит) + tracked;
 ``` 
