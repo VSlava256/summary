@@ -40,3 +40,9 @@ graph LR;
 %% стрелка без текста для примера: 
   A --> B;
 ``` 
+
+```mermaid
+graph LR;
+%% так в mermaid можно писать комментарии
+  untracked -- "git add" --> staged;
+``` 
