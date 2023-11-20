@@ -31,6 +31,7 @@ https://www.conventionalcommits.org/ru/v1.0.0-beta.4/#%D1%81%D0%BF%D0%B5%D1%86%D
 
 
 ## Статус и жизненный цикл файлов
+https://github.blog/2022-02-14-include-diagrams-markdown-files-mermaid/
 
 ```mermaid
 graph LR;
@@ -44,5 +45,6 @@ graph LR;
 ```mermaid
 graph LR;
 %% так в mermaid можно писать комментарии
-  A[untracked] -- "git add" --> B[staged (в списке на коммит) + tracked];
+  A(untracked) -- "git add" --> B(staged + tracked);
+  B -- "git commit" --> c(tracked);
 ``` 
