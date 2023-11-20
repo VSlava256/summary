@@ -36,9 +36,4 @@ https://www.conventionalcommits.org/ru/v1.0.0-beta.4/#%D1%81%D0%BF%D0%B5%D1%86%D
 graph LR;
 %% так в mermaid можно писать комментарии
   untracked -- "git add" --> staged (в списке на коммит) + tracked;
-  staged (в списке на коммит) + tracked -- "git commit" --> tracked (отслеживаемый);
-  staged (в списке на коммит) + tracked -- "Изменения" --> modified (измененный);
-  modified (измененный) -- "git add" --> staged (в списке на коммит) + tracked;
-  tracked (отслеживаемый) -- "Изменения" --> modified (измененный);
-
 ```
