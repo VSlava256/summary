@@ -46,5 +46,8 @@ graph LR;
 graph LR;
 %% так в mermaid можно писать комментарии
   A(untracked) -- "git add" --> B(staged + tracked);
-  B -- "git commit" --> c(tracked);
+  B -- "git commit" --> C(tracked);
+  D(modified) -- "git add" --> B;
+  B -- "changes" --> D;
+  C -- "changes" --> D;
 ``` 
